@@ -62,3 +62,27 @@ html {
 .main {
     flex: 1;
 }
+
+.main-scroll {
+    width: 100%;
+    .main-ban {
+        width: 100%;
+        .main-wrap {
+            width: 100%;
+            >div {
+                width: 100%;
+                display: flex;
+                flex-wrap: wrap;
+                dl {
+                    width: 20%;
+                    dt {
+                        width: 100%;
+                        img {
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -7,3 +7,5 @@ xml.onload = function(res) {
     }
 }
 xml.send()
+
+new Swiper('.main-ban')
