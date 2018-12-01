@@ -2,7 +2,7 @@
  * @Author: huying 
  * @Date: 2018-12-01 11:46:39 
  * @Last Modified by: mikey.zhaopeng
- * @Last Modified time: 2018-12-01 12:17:35
+ * @Last Modified time: 2018-12-01 12:25:09
  */
 var wrap = document.querySelector('.main-wrap');
 
@@ -36,5 +36,20 @@ function xrswiper(data) {
         html += `</div>`;
     })
     wrap.innerHTML = html;
-    new Swiper('.main-ban');
+    new Swiper('.main-ban', {
+        loop: true,
+        autoplay: {
+            delay: 1000,
+        },
+        pagination: {
+            el: "#pagination",
+            clickable: true,
+        },
+    });
+
 }
+
+var cr1 = new BScroll(".main", {
+    click: true,
+    probeType: 2, //可使用事件
+})

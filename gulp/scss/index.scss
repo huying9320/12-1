@@ -61,6 +61,7 @@ html {
 
 .main {
     flex: 1;
+    overflow: hidden;
 }
 
 .main-scroll {
@@ -83,6 +84,24 @@ html {
                         }
                     }
                 }
+            }
+        }
+    }
+    .con {
+        width: 100%;
+        height: auto;
+        .item {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            dt {
+                flex: 30%;
+                img {
+                    width: 100%;
+                }
+            }
+            dd {
+                flex: 70%;
             }
         }
     }
